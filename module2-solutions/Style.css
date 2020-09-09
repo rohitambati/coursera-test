@@ -1,76 +1,113 @@
-* {  
-  box-sizing: border-box;
-}
-h1 {	
-  font-size: 27px;	
-  font-family: Georgia serif;	
-  text-align: center;	
-  color: rgb(0, 0, 0);	
-  margin-bottom: 30px;
-}
-p {	
-  padding: 15px 5px 0px 5px;	
-  font-family: Georgia sans-serif;	
-  font-size: 16px;	
-  position: relative;
-}
-.section { 	
-  background-color: rgb(150, 150, 150);   	
-  border: 2px solid black;   	
-  margin-top: 20px;    	
-  margin-right: 20px;    	
-  padding: 3px;   	
-  text-align: justify;   	
-  position: relative; 
-}
-span {	
-  font-size: 20px;	
-  width: 150px;	
-  border: 1px solid black;	
-  font-weight: bold;	
-  text-align: center;	
-  float: right; 
-  top :0; right: 0; margin: 0;	
-  position: absolute;
-}
-#sp1 {	
-  background-color: rgb(250, 150, 150);	
-  color: rgb(0, 0, 0);
-}
-#sp2 {	
-  background-color: rgb(250, 0, 0);	
-  color: rgb(250, 250, 250);
-}
-#sp3 {	
-  background-color: rgb(200, 200, 100);	
-  color: rgb(0, 0, 0);
-}
-}
-.row {	
-  width: 100%;
-}
-/* Desktop PC view */
-@media (min-width: 992px) {  
-  .col-lg-4 {    
-    width: 33.33%;    
-    float: left;	
-  }
-}
-/* Tablet PC view */
-@media (min-width: 768px) and (max-width: 991px) {  
-  .col-md-6 {    
-    width: 50%;    
-    float: left;  
-  }  
-  .col-md-12 {    
-    width: 100%;    float: left;  
-  }
-}
-/* Cell phone view */
-@media (max-width: 767px)  {  
-  .col-sx-12 {  	
-    float: left;    
-    width: 100%;  
-  }
+*{
+    box-sizing: border-box;
+ }
+        
+h1{
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom:50px;
 }
 
+p{
+  border : 5px solid black;
+  float: left;
+  padding-top:35px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom: 10px;
+  margin-right: 2px;
+  margin-left:2px;
+  position:relative;
+  background-color:grey;
+}
+
+#p1{
+  width:33%;
+  border : 2px solid black;
+}
+
+#p2{
+  width:33%;        
+  border : 2px solid black;
+}
+
+#p3{
+  width:33%;
+  border : 2px solid black;
+}
+
+span{
+    text-align: center;
+    position:relative;
+    padding-top:2px;
+    padding-bottom: 2px;
+    padding-left:12px;
+    padding-right:12px;
+    right:0px;
+    top:0px;
+    float:right;
+    margin:0px;
+}
+        
+#sp1{
+  border: 2px solid black;
+  position:absolute;
+  background-color: rgb(250, 150, 150);
+  color: rgb(0, 0, 0);      
+}
+
+#sp2{
+  border: 2px solid black;
+  position:absolute;
+  background-color: rgb(250, 0, 0);
+  color: rgb(200, 250, 250);
+}
+
+#sp3{
+  border: 2px solid black;
+  position:absolute;
+  background-color: rgb(250, 200, 100);
+  color: rgb(0, 0, 0);
+}
+
+/* Desktop PC view */
+@media (min-width: 992px) { 
+    #p1{
+        width:33%;
+        margin:1px;
+    }
+    #p2{
+        width:33%;
+        margin:1px;
+    }
+    #p3{
+        width:33%;
+        margin:1px;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) { 
+    #p1{
+        width:49%;
+    }
+    #p2{
+        width:49%;
+    }
+    #p3{
+        width:100%
+    }
+}
+
+/* Cell phone view */
+@media (max-width: 767px)  {
+    #p1{
+        width:100%;
+    }
+    #p2{
+        width:100%;
+    }
+    #p3{
+        width:100%
+    }
+}
