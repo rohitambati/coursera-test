@@ -1,3 +1,5 @@
+/* Base Styles */
+
 * {
 	box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ h1 {
 
 body {
 	background-image: url("background.jpg");
-	background-color: #FEF5CA;
+	background-color: skyblue;
 
 }
 
@@ -29,7 +31,7 @@ p {
 
 section {
 	border:	1px solid black;
-	background-color: #00FF99;
+	background-color: slategray;
 	width: 100%;
 	height: auto;
 	font-family: Helvetica;
@@ -104,7 +106,7 @@ section {
 
 #header-nav {
   border: 0;
-  background-color: #FC5F06;
+  background-color: royalblue;
   color: #FFFFFF;
 }
 
